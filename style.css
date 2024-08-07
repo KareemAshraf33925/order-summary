@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--Paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+body{
+    background-color: var(--Paleblue);
+    font-family: "Red Hat Display", sans-serif;
+    height: 120vh;
+}
+/* Start-summary  */
+.back-header picture img{
+    width: 100%;
+}
+#summary .container{
+    margin: 50px 500px;
+    position: relative;
+}
+#summary .container .summary-content{
+    position: absolute;
+    top: -400px;
+    right:-100px;
+    width: 450px;
+    height: 660px;
+    text-align: center;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+#summary .container .summary-content img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#summary .container .summary-content .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#summary .container .summary-content .items h1{
+    font-size: 30px;
+    font: 700 "Red Hat Display";
+}
+#summary .container .summary-content .items .p-1{
+    font-size: 16px;
+    font-weight: 500;
+    font-family:"Red Hat Display" ;
+    width: 300px;
+    opacity: 0.8;
+    line-height: 30px;
+}
+#summary .container .summary-content .items button{
+    background-color:var(--Brightblue) ;
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius:10px;
+    margin-top: 30px;
+}
+#summary .container .summary-content .items .p-4{
+    font-size: 16px;
+    font-weight: 500;
+    font-family:"Red Hat Display" ;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+#summary .container .summary-content .items .items-right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:var(--Verypaleblue) ;
+    width: 80%;
+    height: 100px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+#summary .container .summary-content .items .items-right  div{
+    margin:20px 0px 0px 20px;
+    float: left;
+
+}
+
+#summary .container .summary-content .items .items-right  img{
+    width:30px;
+    display: block;
+    margin:20px 0px 0px 10px;
+    float: left;
+}
+#summary .container .summary-content .items .items-right  a{
+    margin: 45px 25px 0px 0px;
+    display: block;
+}
+
+#summary .container .summary-content .items .items-right .item   .p-2{
+    font-size: 16px;
+    font-family:"Red Hat Display" ;
+}
+#summary .container .summary-content .items .items-right .item .p-3{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.6;
+    font-family:"Red Hat Display" ;
+}
+
+
+/* End-summary  */
+@media(max-width:375px){
+    .back-header picture img{
+        width: 135%;
+    }
+    #summary .container .summary-content{
+        position: absolute;
+        top: -200px;
+        right:22px
+    }
+
+}
+@media(min-width:376px) and (max-width:768px){
+    #summary .container .summary-content{
+        position: absolute;
+        top: -200px;
+        right: -122px
+    }
+
+}
+@media(min-width:769px) and (max-width:1024px){
+    body{
+        height: 130vh;
+    }
+    #summary .container .summary-content{
+        position: absolute;
+        top: -200px;
+        right: -215px
+    }
+
+}
+@media(min-width:1025px) and (max-width:1440px){
+    body{
+        height: 130vh;
+    }
+    #summary .container .summary-content{
+        position: absolute;
+        top:-360px;
+        right:0px
+    }
+
+}
